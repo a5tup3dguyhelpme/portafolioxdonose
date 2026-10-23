@@ -1,7 +1,7 @@
-let musica = document.getElementById("musica");
-function reproducirMusica() {
+let musica = document.getElementById("audio");
+function play() {
     musica.play();
 }   
-function pausarMusica() {
+function pause() {
     musica.pause();
 }
