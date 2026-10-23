@@ -5,10 +5,10 @@ function play() {
 function pause() {
     musica.pause();
 }
-let musica = document.getElementById("night");
+let cancion = document.getElementById("night");
 function start() {
-    musica.play();
+    cancion.play();
 }   
 function end() {
-    musica.pause();
+    cancion.pause();
 }
