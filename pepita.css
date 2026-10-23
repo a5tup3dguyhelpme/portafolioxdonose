@@ -1,0 +1,136 @@
+@font-face{
+    font-family: kostas;
+    src: url('kostas.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: zrnic rg;
+    src: url('zrnic\ rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: ancient runes;
+    src: url('Ancient\ Runes_1_1.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    background-image:  url("https://media.lexaloffle.com/20526/matrix_rain_161c.gif");
+    margin: 0;
+    padding: 0;
+}
+
+/* next part was taken from a layout in spacehey, thanks to p0libius \(^_^)/  */
+
+img {
+filter: sepia(100%) hue-rotate(45deg) saturate(5);
+}
+body::before {
+content: " ";
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+z-index: 2;
+background-size: 100% 2px, 3px 100%;
+pointer-events: none;
+}
+.logo {
+filter: sepia(100%) hue-rotate(45deg) saturate(10);
+}
+#q, button {
+color: #00ff00;
+background-color: black;
+border: 1px solid #00ff00;
+font-family: inherit;
+}
+p, i, b {
+color: #00ff00 !important;
+font-family: kostas !important;
+}
+a, .profile .friends .person p, .logout-btn {
+color: #00ff00 !important;
+text-decoration: underline !important;
+}
+nav, nav .links a {
+color: #00ff00;
+}
+nav .top {
+margin-top: 2px;
+background: none;
+background-color: black;
+border: 2px dotted #00ff00;
+border-bottom: none;
+}
+nav .links {
+background-color: black;
+border: 2px solid #00ff00;
+}
+main {
+background: black;
+color: #00ff00;
+border-left: 2px dotted #00ff00;
+border-right: 2px dotted #00ff00;
+}
+td {
+color: #00ff00 !important;
+background: none;
+background-color: black !important;
+} 
+
+
+/* end of layout from p0libius */
+div{
+  width: 100%;             
+    max-width: 800px;       
+    box-sizing: border-box; 
+    padding: 20px;
+    background-color: #000000;
+    border: 1px #00ff00 solid;
+    overflow-wrap: break-word; 
+    white-space: normal;
+    text-align: left;   
+}
+img{
+   float: right;
+    clear: right;           
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 200px;
+    height: auto;
+}
+h1, h2{
+    font-family: ancient runes;
+    color:#00ff00
+}
+h3, h4, h5, h6{
+    font-family: zrnic rg;  
+    color: #00ff00;
+}
+audio{
+    display: block;
+    margin: 20px auto; 
+    filter: invert(1) hue-rotate(90deg) saturate(3); 
+    border: 1px solid #00ff00;
+    background-color: black;
+}
+button{
+    color: #00ff00;
+    background-color: black;
+    border: 1px solid #00ff00;
+    font-family: zrnic rg;
+}
